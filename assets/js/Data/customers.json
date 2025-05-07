@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Jane Cooper",
+        "company": "Microsoft",
+        "phone": "(225) 555-0118",
+        "email": "jane@microsoft.com",
+        "country": "United States",
+        "status": 1
+    },
+    {
+        "name": "Floyd Miles",
+        "company": "Yahoo",
+        "phone": "(205) 555-0100",
+        "email": "floyd@yahoo.com",
+        "country": "Kiribati",
+        "status": 0
+    },
+    {
+        "name": "Ronald Richards",
+        "company": "Adobe",
+        "phone": "(302) 555-0107",
+        "email": "ronald@adobe.com",
+        "country": "Israel",
+        "status": 0
+    },
+    {
+        "name": "Marvin McKinney",
+        "company": "Tesla",
+        "phone": "(252) 555-0126",
+        "email": "marvin@tesla.com",
+        "country": "Iran",
+        "status": 1
+    },
+    {
+        "name": "Jerome Bell",
+        "company": "Google",
+        "phone": "(629) 555-0129",
+        "email": "jerome@google.com",
+        "country": "Réunion",
+        "status": 1
+    },
+    {
+        "name": "Kathryn Murphy",
+        "company": "Microsoft",
+        "phone": "(406) 555-0120",
+        "email": "kathryn@microsoft.com",
+        "country": "Curaçao",
+        "status": 1
+    },
+    {
+        "name": "Jacob Jones",
+        "company": "Yahoo",
+        "phone": "(208) 555-0112",
+        "email": "jacob@yahoo.com",
+        "country": "Brazil",
+        "status": 1
+    },
+    {
+        "name": "Eleanor Pena",
+        "company": "Amazon",
+        "phone": "(318) 555-0113",
+        "email": "eleanor@amazon.com",
+        "country": "Canada",
+        "status": 0
+    },
+    {
+        "name": "Courtney Henry",
+        "company": "Netflix",
+        "phone": "(423) 555-0114",
+        "email": "courtney@netflix.com",
+        "country": "Japan",
+        "status": 1
+    },
+    {
+        "name": "Albert Flores",
+        "company": "Slack",
+        "phone": "(521) 555-0115",
+        "email": "albert@slack.com",
+        "country": "Germany",
+        "status": 1
+    },
+    {
+        "name": "Brooklyn Simmons",
+        "company": "Zoom",
+        "phone": "(415) 555-0116",
+        "email": "brooklyn@zoom.com",
+        "country": "South Korea",
+        "status": 0
+    },
+    {
+        "name": "Devon Lane",
+        "company": "Twitch",
+        "phone": "(657) 555-0117",
+        "email": "devon@twitch.tv",
+        "country": "Philippines",
+        "status": 1
+    },
+    {
+        "name": "Arlene McCoy",
+        "company": "Spotify",
+        "phone": "(702) 555-0118",
+        "email": "arlene@spotify.com",
+        "country": "Ireland",
+        "status": 0
+    },
+    {
+        "name": "Wade Warren",
+        "company": "Intel",
+        "phone": "(303) 555-0119",
+        "email": "wade@intel.com",
+        "country": "France",
+        "status": 1
+    },
+    {
+        "name": "Cameron Williamson",
+        "company": "Cisco",
+        "phone": "(808) 555-0120",
+        "email": "cameron@cisco.com",
+        "country": "Singapore",
+        "status": 1
+    },
+    {
+        "name": "Leslie Alexander",
+        "company": "Dropbox",
+        "phone": "(913) 555-0121",
+        "email": "leslie@dropbox.com",
+        "country": "Malaysia",
+        "status": 0
+    },
+    {
+        "name": "Savannah Nguyen",
+        "company": "Facebook",
+        "phone": "(220) 555-0122",
+        "email": "savannah@facebook.com",
+        "country": "Italy",
+        "status": 1
+    },
+    {
+        "name": "Darlene Robertson",
+        "company": "Reddit",
+        "phone": "(312) 555-0123",
+        "email": "darlene@reddit.com",
+        "country": "Thailand",
+        "status": 0
+    },
+    {
+        "name": "Guy Hawkins",
+        "company": "Oracle",
+        "phone": "(718) 555-0124",
+        "email": "guy@oracle.com",
+        "country": "Argentina",
+        "status": 1
+    },
+    {
+        "name": "Esther Howard",
+        "company": "eBay",
+        "phone": "(828) 555-0125",
+        "email": "esther@ebay.com",
+        "country": "Spain",
+        "status": 0
+    }
+]

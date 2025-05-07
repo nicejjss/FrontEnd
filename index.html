@@ -10,7 +10,7 @@
 
 <body>
     <main id="main">
-        <header id="header">
+        <header id="header" class="box-shadow">
             <a href="#home" id="logo-link">
                 <img id="logo-img" src="./assets/logo/logo.png" alt="Logo">
                 <span id="logo-title" class="visible">Dashboard</span>
@@ -31,7 +31,8 @@
                             <img class="nav-item-icon-selected" src="./assets/icons/selected/product-selected.svg"
                                 alt="Dashboard Icon Selected">
                             <span class="nav-item-title visible">Product</span>
-                            <img class="nav-item-arrow arrow visible" src="./assets/icons/nav-arrow.svg" alt="Item Arrow">
+                            <img class="nav-item-arrow arrow visible" src="./assets/icons/nav-arrow.svg"
+                                alt="Item Arrow">
                             <img class="nav-item-arrow-selected arrow"
                                 src="./assets/icons/selected/nav-arrow-selected.svg" alt="Item Arrow Selected">
                         </a>
@@ -42,7 +43,8 @@
                             <img class="nav-item-icon-selected" src="./assets/icons/selected/product-selected.svg"
                                 alt="Dashboard Icon Selected">
                             <span class="nav-item-title visible">Customers</span>
-                            <img class="nav-item-arrow arrow visible" src="./assets/icons/nav-arrow.svg" alt="Item Arrow">
+                            <img class="nav-item-arrow arrow visible" src="./assets/icons/nav-arrow.svg"
+                                alt="Item Arrow">
                             <img class="nav-item-arrow-selected arrow"
                                 src="./assets/icons/selected/nav-arrow-selected.svg" alt="Item Arrow Selected">
                         </a>
@@ -53,7 +55,8 @@
                             <img class="nav-item-icon-selected" src="./assets/icons/selected/product-selected.svg"
                                 alt="Dashboard Icon Selected">
                             <span class="nav-item-title visible">Income</span>
-                            <img class="nav-item-arrow arrow visible" src="./assets/icons/nav-arrow.svg" alt="Item Arrow">
+                            <img class="nav-item-arrow arrow visible" src="./assets/icons/nav-arrow.svg"
+                                alt="Item Arrow">
                             <img class="nav-item-arrow-selected arrow"
                                 src="./assets/icons/selected/nav-arrow-selected.svg" alt="Item Arrow Selected">
                         </a>
@@ -64,7 +67,8 @@
                             <img class="nav-item-icon-selected" src="./assets/icons/selected/product-selected.svg"
                                 alt="Dashboard Icon Selected">
                             <span class="nav-item-title visible">Promote</span>
-                            <img class="nav-item-arrow arrow visible" src="./assets/icons/nav-arrow.svg" alt="Item Arrow">
+                            <img class="nav-item-arrow arrow visible" src="./assets/icons/nav-arrow.svg"
+                                alt="Item Arrow">
                             <img class="nav-item-arrow-selected arrow"
                                 src="./assets/icons/selected/nav-arrow-selected.svg" alt="Item Arrow Selected">
                         </a>
@@ -75,7 +79,8 @@
                             <img class="nav-item-icon-selected" src="./assets/icons/selected/product-selected.svg"
                                 alt="Dashboard Icon Selected">
                             <span class="nav-item-title visible">Help</span>
-                            <img class="nav-item-arrow arrow visible" src="./assets/icons/nav-arrow.svg" alt="Item Arrow">
+                            <img class="nav-item-arrow arrow visible" src="./assets/icons/nav-arrow.svg"
+                                alt="Item Arrow">
                             <img class="nav-item-arrow-selected arrow"
                                 src="./assets/icons/selected/nav-arrow-selected.svg" alt="Item Arrow Selected">
                         </a>
@@ -103,15 +108,16 @@
                 <section id="content-header-greeting">
                     <h2>Hello Loc Dao 👋🏼,</h2>
                 </section>
-                <section id="content-header-search">
+                <form id="content-header-search" class="search-form">
                     <img id="search-icon" src="./assets/icons/search.svg" alt="Search Icon">
-                    <input type="text" name="name" id="search-input" placeholder="Search">
-                </section>
+                    <input type="text" name="name" class="search-input" placeholder="Search">
+                </form>
             </section>
-            <section id="content-archivement">
+            <section id="content-archivement" class="box-shadow">
                 <ul id="archivement-list" type="none">
                     <li class="archivement-item">
-                        <img class="archivement-item-img" src="./assets/icons/archivement/customers.svg" alt="Customers Archivement">
+                        <img class="archivement-item-img" src="./assets/icons/archivement/customers.svg"
+                            alt="Customers Archivement">
                         <section class="archivement-item-detail">
                             <span class="archivement-item-header">Total Customers</span>
                             <span class="archivement-item-number">5,423</span>
@@ -124,7 +130,8 @@
                         </section>
                     </li>
                     <li class="archivement-item seperate-left">
-                        <img class="archivement-item-img" src="./assets/icons/archivement/members.svg" alt="Members Archivement">
+                        <img class="archivement-item-img" src="./assets/icons/archivement/members.svg"
+                            alt="Members Archivement">
                         <section class="archivement-item-detail">
                             <span class="archivement-item-header">Members</span>
                             <span class="archivement-item-number">1,893</span>
@@ -137,7 +144,8 @@
                         </section>
                     </li>
                     <li class="archivement-item seperate-left">
-                        <img class="archivement-item-img" src="./assets/icons/archivement/active.svg" alt="Active Archivement">
+                        <img class="archivement-item-img" src="./assets/icons/archivement/active.svg"
+                            alt="Active Archivement">
                         <section class="archivement-item-detail">
                             <span class="archivement-item-header">Active Now</span>
                             <span class="archivement-item-number">189</span>
@@ -145,16 +153,118 @@
                                 <img class="archivement-item-member" src="./assets/avatar/user1.png" alt="User 1">
                                 <img class="archivement-item-member" src="./assets/avatar/user2.png" alt="User 2">
                                 <img class="archivement-item-member" src="./assets/avatar/user3.png" alt="User 3">
-                                <img class="archivement-item-member" src="./assets/avatar/user4.png" alt="User 4">                                
+                                <img class="archivement-item-member" src="./assets/avatar/user4.png" alt="User 4">
                             </section>
                         </section>
                     </li>
                 </ul>
             </section>
-            <section id="content-data">
+            <section id="content-data" class="box-shadow">
+                <section id="content-data-header">
+                    <div id="content-data-header-title" class="margin-0">
+                        <h2>All Customers</h2>
+                        <span class="rate-up">Active Members</span>
+                    </div>
+                    <section id="customer-search" class="margin-0">
+                        <form action="" method="" id="customer-search-form">
+                            <section id="customer-search-input" class="search-form">
+                                <img id="search-icon" src="./assets/icons/search.svg" alt="Search Icon">
+                                <input type="text" name="name" class="search-input" id="search-inp"
+                                    placeholder="Search">
+                            </section>
+                            <section id="form-filter">
+                                <label for="filter-select">Short by:</label>
+                                <select name="filter" id="filter-select" class="select-input">
+                                    <option value="all">Newest</option>
+                                    <option value="active">Oldest</option>
+                                    <option value="inactive">Inactive</option>
+                                    <option value="active">Active</option>
+                                </select>
+                                <img id="filter-icon" src="./assets/icons/down-arrow.svg" alt="Filter Icon">
+                            </section>
+                        </form>
+                    </section>
+                </section>
+                <section id="content-data-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Customer Name</th>
+                                <th>Company</th>
+                                <th>Phone Number</th>
+                                <th>Email</th>
+                                <th>Country</th>
+                                <th class="head-status">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="content-data-body">
+                            <!-- <tr>
+                                <td>Jane Cooper</td>
+                                <td>Microsoft</td>
+                                <td>(225) 555-0118</td>
+                                <td>jane@microsoft.com</td>
+                                <td>United States</td>
+                                <td class="data-status"><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Floyd Miles</td>
+                                <td>Yahoo</td>
+                                <td>(205) 555-0100</td>
+                                <td>floyd@yahoo.com</td>
+                                <td>Kiribati</td>
+                                <td class="data-status"><span class="status inactive">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Adobe</td>
+                                <td>(302) 555-0107</td>
+                                <td>ronald@adobe.com</td>
+                                <td>Israel</td>
+                                <td class="data-status"><span class="status inactive">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td>Marvin McKinney</td>
+                                <td>Tesla</td>
+                                <td>(252) 555-0126</td>
+                                <td>marvin@tesla.com</td>
+                                <td>Iran</td>
+                                <td class="data-status"><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jerome Bell</td>
+                                <td>Google</td>
+                                <td>(629) 555-0129</td>
+                                <td>jerome@google.com</td>
+                                <td>Réunion</td>
+                                <td class="data-status"><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Kathryn Murphy</td>
+                                <td>Microsoft</td>
+                                <td>(406) 555-0120</td>
+                                <td>kathryn@microsoft.com</td>
+                                <td>Curaçao</td>
+                                <td class="data-status"><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jacob Jones</td>
+                                <td>Yahoo</td>
+                                <td>(208) 555-0112</td>
+                                <td>jacob@yahoo.com</td>
+                                <td>Brazil</td>
+                                <td class="data-status"><span class="status active">Active</span></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                    <div id="pagination-summary" class="pagination-summary"
+                        style="margin-bottom: 1rem; color: #a0aec0; font-size: 14px;">
+                    </div>
+                </section>
             </section>
         </section>
     </main>
+
+    <script src="./assets/js/index.js" type="module"></script>
 </body>
 
 </html>
