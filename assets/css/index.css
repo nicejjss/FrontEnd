@@ -402,6 +402,7 @@ header+#content {
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 1.875rem;
 }
 
 thead {
@@ -420,7 +421,7 @@ thead::after {
 
 th,
 td {
-    padding: 16px 20px;
+    padding: 16px 0;
     white-space: nowrap;
 }
 
@@ -454,4 +455,48 @@ tbody tr {
 
 .data-status {
     text-align: center;
+}
+
+.pagination {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #f3f4f6;
+    /* light gray */
+    color: #374151;
+    /* gray-700 */
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pagination .active {
+    background-color: #6d28d9;
+    /* purple-700 */
+    color: white;
+}
+
+.pagination-button:hover {
+    background-color: #6d28d9;
+    color: #fff;
+}
+
+.pagination .dots {
+    pointer-events: none;
+    background: none;
+    color: #6b7280;
+    /* gray-500 */
+}
+
+#content-data-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

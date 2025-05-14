@@ -37,15 +37,84 @@ const displaySummary = (result) => {
     }
 }
 
+const displayControls = (result) => {
+    const paginationControls = document.getElementById('pagination-controls');
+    const { totalPages, page } = result;
+    
+    let buttons = `<button class="pagination-button" id="prev-page" ${page === 1 ? 'disabled' : ''}>&lt;</button>`;
+    
+    // Always show first page
+    buttons += `<button class="pagination-button" id="page-1">1</button>`;
+    
+    // Calculate range of pages to show
+    let startPage = Math.max(2, page - 1);
+    let endPage = Math.min(totalPages - 1, page + 1);
+    
+    // Add dots if needed after first page
+    if (startPage > 2) {
+        buttons += `<button class="dots">...</button>`;
+    }
+    
+    // Add middle pages
+    for (let i = startPage; i <= endPage; i++) {
+        buttons += `<button class="pagination-button" id="page-${i}">${i}</button>`;
+    }
+    
+    // Add dots if needed before last page
+    if (endPage < totalPages - 1) {
+        buttons += `<button class="dots">...</button>`;
+    }
+    
+    // Always show last page if there is more than one page
+    if (totalPages > 1) {
+        buttons += `<button class="pagination-button" id="page-${totalPages}">${totalPages}</button>`;
+    }
+    
+    buttons += `<button class="pagination-button" id="next-page" ${page === totalPages ? 'disabled' : ''}>&gt;</button>`;
+    
+    paginationControls.innerHTML = buttons;
+    
+    // Add active class to current page
+    const activeButton = paginationControls.querySelector(`#page-${page}`);
+    if (activeButton) {
+        activeButton.classList.add('active');
+    }
+
+    // Remove old event listener before adding new one
+    const newPaginationControls = paginationControls.cloneNode(true);
+    paginationControls.parentNode.replaceChild(newPaginationControls, paginationControls);
+    
+    // Add new event listener
+    newPaginationControls.addEventListener('click', (e) => handlePaginationClick(e, result.page));
+}
+
+// Main pagination click handler
+const handlePaginationClick = (e, currentPage) => {
+    let page = currentPage;
+    if (e.target.classList.contains('pagination-button')) {
+        if (e.target.id === 'prev-page') {
+            page  = currentPage - 1;
+        } else if (e.target.id === 'next-page') {
+            page = currentPage + 1;
+        } else if (e.target.id.startsWith('page-')) {
+            const pageNumber = parseInt(e.target.id.split('-')[1]);
+            page = pageNumber;
+        }
+
+        loadData(page);
+    }
+}
+
 // Initialize repository using singleton pattern
 const repository = RepositoryFactory.getInstance().getRepository();
 
 // Update loadData to render pagination controls
-const loadData = async (page, limit) => {
+const loadData = async (page) => {
     try {
-        const result = await repository.getUsers(page, limit);
+        const result = await repository.getUsers(page);
         displayRow(result.data);
         displaySummary(result);
+        displayControls(result);
     } catch (error) {
         console.error('Error loading data:', error);
     }

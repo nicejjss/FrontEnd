@@ -6,17 +6,18 @@ export class RemoteUserRepository extends FetchRepository {
         super();
     }
 
-    async getUsers(page = FetchRepository.PAGE, limit = FetchRepository.LIMIT) {
+    async getUsers(page) {
         try {
-            const data = await super.fetchUsers(page, limit);
-            //return like local
-            return {
-                data: data.map(item => CustomerDTO.convertRemoteToDTO(item)),
-                total: data.length,
-                totalPages: await super.fetchTotalPages(),
-                page: page,
-                limit: limit
-            };
+            const data = await super.fetchUsers(page);
+            let total = await super.fetchTotal();
+            let limit = this.LIMIT;
+            
+            return this.formatResult(
+                data.map(item => CustomerDTO.convertRemoteToDTO(item)),
+                total,
+                page,
+                limit
+            );
         } catch (error) {
             console.error('Error in RemoteUserRepository:', error);
             return [];

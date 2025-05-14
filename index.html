@@ -173,10 +173,10 @@
                                     placeholder="Search">
                             </section>
                             <section id="form-filter">
-                                <label for="filter-select">Short by:</label>
+                                <label for="filter-select">Sort by:</label>
                                 <select name="filter" id="filter-select" class="select-input">
-                                    <option value="all">Newest</option>
-                                    <option value="active">Oldest</option>
+                                    <option value="newest">Newest</option>
+                                    <option value="oldest">Oldest</option>
                                     <option value="inactive">Inactive</option>
                                     <option value="active">Active</option>
                                 </select>
@@ -185,20 +185,19 @@
                         </form>
                     </section>
                 </section>
-                <section id="content-data-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Customer Name</th>
-                                <th>Company</th>
-                                <th>Phone Number</th>
-                                <th>Email</th>
-                                <th>Country</th>
-                                <th class="head-status">Status</th>
-                            </tr>
-                        </thead>
-                        <tbody id="content-data-body">
-                            <!-- <tr>
+                <table id="content-data-table">
+                    <thead>
+                        <tr>
+                            <th>Customer Name</th>
+                            <th>Company</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                            <th>Country</th>
+                            <th class="head-status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="content-data-body">
+                        <!-- <tr>
                                 <td>Jane Cooper</td>
                                 <td>Microsoft</td>
                                 <td>(225) 555-0118</td>
@@ -254,10 +253,21 @@
                                 <td>Brazil</td>
                                 <td class="data-status"><span class="status active">Active</span></td>
                             </tr> -->
-                        </tbody>
-                    </table>
-                    <div id="pagination-summary" class="pagination-summary"
+                    </tbody>
+                </table>
+                <section id="content-data-pagination" class="margin-0">
+                    <div id="pagination-summary" class="pagination-summary margin-0"
                         style="margin-bottom: 1rem; color: #a0aec0; font-size: 14px;">
+                    </div>
+                    <div class="pagination margin-0" id="pagination-controls">
+                        <!-- <button class="pagination-button" id="prev-page">&lt;</button>
+                        <button class="pagination-button" id="page-1">1</button>
+                        <button class="pagination-button active" id="page-2">2</button>
+                        <button class="pagination-button" id="page-3">3</button>
+                        <button class="pagination-button" id="page-4">4</button>
+                        <button class="dots">...</button>
+                        <button class="pagination-button" id="page-40">40</button>
+                        <button class="pagination-button" id="next-page">&gt;</button> -->
                     </div>
                 </section>
             </section>
