@@ -260,15 +260,17 @@ header+#content {
         #archivement-list {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
 
             .archivement-item {
+                flex-grow: 1;
                 display: flex;
                 justify-content: center;
                 margin: 0;
-                width: 33%;
 
                 .archivement-item-img {
                     margin-right: 0;
+                    width: 25%;
                 }
 
                 .archivement-item-detail {
